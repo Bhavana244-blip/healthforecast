@@ -1,66 +1,56 @@
-HealthForecast
+# HealthForecast
 
-HealthForecast is an AI-powered health prediction and lifestyle guidance system. It analyzes user health inputs to estimate potential health risks and provides personalized recommendations to improve overall wellness. The goal is to help users take preventive actions early and make informed lifestyle decisions.
+HealthForecast is an AI-powered health prediction and lifestyle guidance system. It analyzes user health inputs to estimate potential health risks and provides personalized recommendations to improve overall wellness. The aim is to help users take preventive actions early and make informed decisions regarding their health.
 
-Live Demo
-
-Access the running application here:
+### Live Demo
 https://Bhavana-1128-healthforest.hf.space
 
-Features
+---
 
-Predicts disease risk based on user-provided health data.
+## Features
+- Predicts potential health risks based on user inputs.
+- Provides personalized lifestyle and diet recommendations.
+- Simple and interactive user interface.
+- Uses machine learning for accurate predictions.
+- Runs directly in the browser via Hugging Face Spaces.
 
-Provides personalized lifestyle & diet recommendations.
+---
 
-Easy-to-use interface for quick analysis.
+## Tech Stack
 
-Built with Machine Learning & interactive UI.
+| Component       | Technology Used          |
+|----------------|--------------------------|
+| Programming    | Python                   |
+| Machine Learning Model | Random Forest / Logistic Regression |
+| Frontend UI    | Gradio                   |
+| Deployment     | Hugging Face Spaces      |
 
-Tech Stack
-Component	Technology
-Backend	Python
-Machine Learning	Random Forest / Logistic Regression (as configured in model)
-Interface	Gradio
-Deployment	Hugging Face Spaces
-Dataset
+---
 
-The dataset used includes health-related metrics such as:
+## Dataset
+The dataset contains health-related attributes such as:
+- Age  
+- BMI  
+- Glucose levels  
+- Blood pressure  
+- Other health parameters
 
-Age
+The model is trained to analyze these parameters and identify health risk patterns.
 
-BMI / Weight & Height
+---
 
-Glucose Levels
+## How It Works
+1. The user enters basic health metrics.
+2. The trained machine learning model processes these inputs.
+3. The system predicts the probability of potential health risks.
+4. The user receives lifestyle recommendations tailored to their profile.
 
-Blood Pressure
+---
 
-Other medical indicators depending on model type.
+## Run Locally
 
-This data is processed to train a predictive model that outputs health risk probabilities.
-
-How It Works
-
-User enters health parameters.
-
-Model processes inputs and predicts risk.
-
-Personalized recommendation suggestions are displayed.
-
-The user can adjust lifestyle habits based on feedback.
-
-Installation (If running locally)
+```bash
 git clone https://github.com/Bhavana244-blip/healthforecast.git
 cd healthforecast
 pip install -r requirements.txt
 python app.py
-
-Future Enhancements
-
-Expand predictions to more health conditions.
-
-Add medical report upload and automatic parameter extraction.
-
-Include doctor-assisted chatbot guidance.
-
-Mobile-friendly UI.
